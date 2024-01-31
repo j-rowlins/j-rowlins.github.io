@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta  lang="en-us"charset="UTF-8" http-equiv="CONTENT-TYPE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style >
+        body{
+           background-color: tan;
+        }
+        .main {
+            
+        }
+        .user-icon {
+            text-align: center;
+        }
+        .user-icon img {        
+            width: 80px;
+            position: relative;
+            margiin-top:20px;
+            opacity: 1.0;
+            
+        }
+        .form1 {
+            background-color: grey;
+            display: grid;
+            border-radius:20px;
+            margin-top: 45px;
+            position: absolute;
+            z-index: -1;
+            width:100%;
+            align-items: center;
+            padding:15px;
+            
+        }
+        h2 {
+            font-size:18;
+            font-family: Times New Roman;
+            text-align: center;
+        }
+        #lb {
+            font-style: italic;
+            font-family: courier;
+        }
+        .lb {
+            width: 300px;
+            height: 30px;
+            border-radius:8px;
+            margin-bottom:20px;
+        }
+        .container2 {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .same-line {
+            vertical-alignment: middle;
+        }
+        .login{
+            text-align: center;
+            
+        }
+        .login-button {
+            width:200px;
+            height:39px;
+            background-color: royalblue;
+            border:1px solid;
+            border-radius: 15px;
+            margin:30px;
+            align-items: center;
+        } 
+        button {
+           width: 80px;
+           
+        }
+        button a img {
+            width:25px;
+        }
+        div .btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 0;
+        }
+        fieldset {
+            text-align: center;
+            justify-content: space-evenly;
+            margin-bottom: 0px;
+            border: none;
+            border-top: 2px solid;
+        }
+        a {
+            color: aqua;
+        }
+  
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        
+        <form class="form1">
+            <div class="user-icon">
+                <img src="user-profile-icon.png" alt="#">
+            </div>
+            <h2>Account Login</h2>
+            <label id="lb">Email/Username</label>
+            <input class="lb" type="email/text" required>
+            <label id="lb">Password</label>
+            <input class="lb" type="password" required>
+            <div class="container2">              
+                <div class="same-line">
+                    <input id="reminder" type="checkbox">
+                    <label for="reminder">Remember me</label>
+                </div>
+                <div class="forgot-password">
+                    <a  style="text-align: right;" href="#">forgot password?</a>
+                </div>                
+            </div>
+            <div class="login">
+                <button  class="login-button" type="submit">Login</button>
+            </div>
+            
+            <fieldset>
+                <legend>Or Continue with:</legend>
+                <div class="btn">
+                    <button><a href="#"><img src="facebook logo.png" alt="#"></a></button>
+                    <button><a href="#"><img src="google-icon.png" alt="#"></a></button>
+                    <button><a href="#"><img src="twitter-icon.png" alt="#"></a></button>             
+                </div>                 
+            </fieldset>
+            <p style="text-align: right;">Don't have an account yet?<a href="Registration.html">Register</a></p>
+        </form>
+    </div>
+</body>
+</html>
